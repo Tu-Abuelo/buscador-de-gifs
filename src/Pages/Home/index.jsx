@@ -2,6 +2,7 @@ import React from 'react'
 import { useGifs } from '../../Hooks/useGifs'
 import Buscador from '../../Components/BuscadorDeGifs/BuscadorDeGifs'
 import ListTrendinGifs from '../../Components/Tendencias/ListTrendinGifs'
+import ListOfGifs from '../../Components/ListaDeGifs/ListOFGifs'
 
 export default function Home ({ params }) {
   const { keyword } = params
@@ -15,7 +16,9 @@ export default function Home ({ params }) {
       <ListTrendinGifs />
       <h1>Última búsqueda</h1>
       <h3>{decodeURI(lastGif)}</h3>
-
+      {setTimeout(() => {
+        <ListOfGifs gifs={gifs} />
+      }, 1000)}
     </>
   )
 }

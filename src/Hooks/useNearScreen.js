@@ -14,7 +14,7 @@ export default function useNearScreen ({ keyword }) {
         handleNextPage()
       }
     }
-    
+
     // eslint-disable-next-line no-undef
     const observer = new IntersectionObserver(onChange, { rootMargin: '150px' })
     observer.observe(elementRef.current)
