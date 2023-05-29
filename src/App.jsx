@@ -12,12 +12,12 @@ function App () {
       <GifsContextProvider>
         <Route
           component={Home}
-          path='/'
+          path='./'
         />
 
         <Route
           component={SearchResults}
-          path='/:keyword/:rating?/:lang?'
+          path='./:keyword/:rating?/:lang?'
         />
       </GifsContextProvider>
     </>
