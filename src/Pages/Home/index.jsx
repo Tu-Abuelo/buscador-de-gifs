@@ -1,8 +1,8 @@
 import React from 'react'
-import ListOfGifs from '../../Components/LIstaDeGifs/ListOFGifs'
 import { useGifs } from '../../Hooks/useGifs'
 import Buscador from '../../Components/BuscadorDeGifs/BuscadorDeGifs'
 import ListTrendinGifs from '../../Components/Tendencias/ListTrendinGifs'
+import ListOfGifs from '../../Components/LIstaDeGifs/ListOFGifs'
 
 export default function Home ({ params }) {
   const { keyword } = params
@@ -16,7 +16,7 @@ export default function Home ({ params }) {
       <ListTrendinGifs />
       <h1>Última búsqueda</h1>
       <h3>{decodeURI(lastGif)}</h3>
-      <ListOfGifs gifs={gifs}> </ListOfGifs>
+      <ListOfGifs gifs={gifs} />
     </>
   )
 }
