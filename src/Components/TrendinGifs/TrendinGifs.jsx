@@ -4,7 +4,7 @@ import './TrendinGifs.css'
 export default function TrendinGifs ({ title }) {
   const [path, push] = useLocation()
   const handleClick = (e) => {
-    push(`/${e.target.textContent}`)
+    push(`/buscador-de-gifs/${e.target.textContent}`)
   }
 
   return (

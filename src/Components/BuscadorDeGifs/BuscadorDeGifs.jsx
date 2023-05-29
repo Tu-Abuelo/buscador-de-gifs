@@ -13,12 +13,12 @@ function Buscador ({ initalKeyword = '', initialRating = 'g', initialLang = 'en'
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    push(`/${keyword}/${rating}/${lang}`)
+    push(`/buscador-de-gifs/${keyword}/${rating}/${lang}`)
   }
 
   const returnHmome = (e) => {
     e.preventDefault()
-    push('/')
+    push('/buscador-de-gifs/')
   }
 
   const handleKeywordChange = (e) => {
