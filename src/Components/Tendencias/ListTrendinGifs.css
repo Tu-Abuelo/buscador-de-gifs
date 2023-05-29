@@ -1,0 +1,25 @@
+li{
+    list-style: none; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+h2{
+    margin: 5px 0 0 0 ;
+}
+
+
+.gifs-contain{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,140px);
+    grid-auto-flow: dense;
+    grid-auto-columns: 140px;
+    grid-auto-rows: 30px;
+    margin: auto;
+    justify-content: center;
+    margin-top: 5px;
+    gap: 3px;
+}

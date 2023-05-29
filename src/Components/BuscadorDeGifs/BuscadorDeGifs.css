@@ -1,0 +1,77 @@
+
+.header{
+    width: 100%;
+    padding-top: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.header-form{
+    
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+    
+}
+.buscador{
+    
+    height: 28px;
+    font-size: 20px;
+    text-align: center;
+    
+    outline: none;
+    border: none;
+    
+}
+.buscar{
+    
+    text-align: center;
+    height: 30px;
+    font-size: 20px;
+   
+    background: rgb(10, 173, 23);
+    outline: none;
+    border: none;
+
+
+}
+
+.buscar:hover{
+    background: rgb(13, 122, 22);
+    cursor: pointer;
+}
+
+.returnHome{
+    background: none;
+    outline: none;
+    border:  none;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+.options{
+    text-align: center;
+    height: 30px;
+    border-radius: none;
+    width: 37px;
+    background-color: #fff;
+    border: none;
+    border-left: 1px solid #000;
+}
+
+
+@media screen and (max-width: 450px) {
+    .buscador{
+        
+        min-width: 100px;
+    }
+}

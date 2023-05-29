@@ -1,0 +1,13 @@
+.contain{
+    max-width: 1000px;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,250px);
+    grid-auto-flow: dense;
+    grid-auto-columns: 250px;
+    grid-auto-rows: 250px;
+    margin: auto;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 5px;
+}
