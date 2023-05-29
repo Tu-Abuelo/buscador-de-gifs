@@ -1,8 +1,8 @@
 import React from 'react'
-import ListOfGifs from '../../Components/ListaDeGifs/ListOFGifs'
 import { useGifs } from '../../Hooks/useGifs'
 import Buscador from '../../Components/BuscadorDeGifs/BuscadorDeGifs'
 import useNearScreen from '../../Hooks/useNearScreen'
+import ListOfGifs from '../../Components/ListOfGifs/ListOfGifs'
 
 export default function SearchResults ({ params }) {
   const { keyword, rating = 'g', lang = 'en' } = params
@@ -14,9 +14,7 @@ export default function SearchResults ({ params }) {
     <>
       <Buscador initalKeyword={keyword} initialRating={rating} initialLang={lang} />
       <h3>{decodeURI(keyword)}</h3>
-      {setTimeout(() => {
-        <ListOfGifs gifs={gifs} />
-      }, 1000)}
+      <ListOfGifs gifs={gifs} />
       <div ref={elementRef} />
     </>
   )
