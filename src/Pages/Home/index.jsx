@@ -2,7 +2,7 @@ import React from 'react'
 import { useGifs } from '../../Hooks/useGifs'
 import Buscador from '../../Components/BuscadorDeGifs/BuscadorDeGifs'
 import ListTrendinGifs from '../../Components/Tendencias/ListTrendinGifs'
-import ListOfGifs from '../../Components/LIstaDeGifs/ListOFGifs'
+import ListOfGifs from '../../Components/ListaDeGifs/ListOFGifs'
 
 export default function Home ({ params }) {
   const { keyword } = params
