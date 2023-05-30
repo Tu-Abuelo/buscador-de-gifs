@@ -9,6 +9,7 @@
 }
 
 
+
 .header-form{
     
     display: flex;
@@ -17,6 +18,10 @@
     width: 100%;
     
 }
+
+
+
+
 .buscador{
     
     height: 28px;

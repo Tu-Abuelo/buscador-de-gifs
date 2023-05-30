@@ -22,4 +22,5 @@ h2{
     justify-content: center;
     margin-top: 5px;
     gap: 3px;
+    padding: 0;
 }
