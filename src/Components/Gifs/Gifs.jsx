@@ -7,7 +7,7 @@ function Gifs ({ title, id, url }) {
 
       <p className='tittle'>{title}</p>
       <picture>
-        <img alt={title} src={url} />
+        <a href={url}><img alt={title} src={url} /></a>
       </picture>
 
     </div>
