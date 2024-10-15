@@ -10,11 +10,13 @@ export default function SearchResults ({ params }) {
   window.localStorage.setItem('lastGif', keyword)
   const { elementRef } = useNearScreen({ keyword })
 
+  console.log(gifs)
   return (
     <>
       <Buscador initalKeyword={keyword} initialRating={rating} initialLang={lang} />
       <h3>{decodeURI(keyword)}</h3>
       <ListOfGifs gifs={gifs} />
+      
       <div ref={elementRef} />
     </>
   )

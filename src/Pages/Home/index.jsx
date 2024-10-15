@@ -6,7 +6,7 @@ import ListOfGifs from '../../Components/ListOfGifs/ListOfGifs'
 
 export default function Home ({ params }) {
   const { keyword } = params
-  const lastGif = window.localStorage.getItem('lastGif')
+  const lastGif = window.localStorage.getItem('lastGif') || 'gatitos'
   const { gifs } = useGifs(lastGif !== undefined ? { keyword: lastGif } : { keyword })
 
   return (
